@@ -3,7 +3,6 @@ package array.secondbiggestvalue;//{ Driver Code Starts
 import java.util.*;
 
 
-
 public class Answer {
 
     public static void main(String[] args) throws Exception {
@@ -16,9 +15,9 @@ public class Answer {
             int[] arr = Arrays.stream(arr1Str).mapToInt(Integer::parseInt).toArray();
             Solution ob = new Solution();
             int ans = ob.getSecondLargest(arr);
-            Solution2 ob2 = new Solution2();
+            Solution3 ob2 = new Solution3();
             int ans2 = ob2.getSecondLargest(arr);
-            System.out.println(ans);
+            System.out.println(ans2);
 
             System.out.println("~");
         }
@@ -78,6 +77,31 @@ public class Answer {
                 .toList();
 
             return answer.get(0).equals(answer.get(1)) ? -1 : answer.get(1);
+
+        }
+
+    }
+
+    static class Solution3 {
+
+        // Better approach and performance
+        public int getSecondLargest(int[] arr) {
+
+            int biggest = 0;
+            int secondBiggest = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+
+                if (biggest <= arr[i]) {
+                    secondBiggest = biggest;
+                    biggest = arr[i];
+                } else if (secondBiggest < arr[i]) {
+                    secondBiggest = arr[i];
+                }
+
+            }
+
+            return biggest == secondBiggest ? -1 : secondBiggest;
 
         }
 

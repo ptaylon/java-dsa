@@ -18,7 +18,7 @@ public class Answer {
             }
 
             //new Solution().pushZerosToEnd(arr);
-            new Solution2().pushZerosToEnd(arr);
+            new Solution4().pushZerosToEnd(arr);
             int n = arr.length;
             for (int i = 0; i < n; i++) {
                 System.out.print(arr[i] + " ");
@@ -78,5 +78,56 @@ public class Answer {
         }
 
     }
+
+    static class Solution3 {
+
+        void pushZerosToEnd(int[] arr) {
+
+            Integer zeroPosition = null;
+
+            for (int i = 0; i < arr.length; i++) {
+
+                if (arr[i] == 0 && zeroPosition == null) {
+
+                    zeroPosition = i;
+
+                } else if (arr[i] > 0 && zeroPosition != null) {
+
+                    arr[zeroPosition] = arr[i];
+                    arr[i] = 0;
+                    zeroPosition += 1;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    static class Solution4 {
+
+        void pushZerosToEnd(int[] arr) {
+
+            int nonZeroIndex = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+
+                if (arr[i] != 0) {
+
+                    int temp = arr[i];
+                    arr[i] = arr[nonZeroIndex];
+                    arr[nonZeroIndex] = temp;
+                    nonZeroIndex += 1;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
 
 }
