@@ -31,9 +31,7 @@ Constraints:
 
 ## Answer
 
-To make it more visual, I'll create the following:  
-1️⃣ **Simulation Table** — Step-by-step tracking of `biggestValue`, `secondBiggestValue`, and `current` values.  
-2️⃣ **Visual Diagram** — A flowchart or step-by-step image showing the flow of how the algorithm runs.
+**Simulation Table** — Step-by-step tracking of `biggestValue`, `secondBiggestValue`, and `current` values.  
 
 Let's start with the **simulation** for the input:
 ```java
@@ -58,12 +56,7 @@ int[] arr = {10, 20, 30, 25, 5};
 
 ---
 
-### **2️⃣ Visual Diagram**
-I'll create an image of how this process works step-by-step.
-
-![img.png](img.png)
-
-The image illustrates the flow of the **getSecondBiggestValueLargest** algorithm step-by-step, from checking if the array is empty to returning the secondBiggestValue largest value.
+### ** Explaining the Algorithm**
 
 ### **Key Steps in the Flowchart**
 1. **Check if the array is empty** — If true, return `-1`.
