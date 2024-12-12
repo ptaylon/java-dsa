@@ -1,4 +1,4 @@
-package br.com.studies.secondbiggestvalue;//{ Driver Code Starts
+package br.com.studies.array.secondbiggestvalue;//{ Driver Code Starts
 
 import java.util.Arrays;
 import java.util.Comparator;

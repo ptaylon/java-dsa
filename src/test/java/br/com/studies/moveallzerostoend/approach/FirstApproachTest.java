@@ -1,5 +1,6 @@
 package br.com.studies.moveallzerostoend.approach;
 
+import br.com.studies.array.moveallzerostoend.approach.FirstApproach;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;
 import io.micrometer.core.instrument.simple.SimpleMeterRegistry;

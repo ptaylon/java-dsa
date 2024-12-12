@@ -1,6 +1,6 @@
-package br.com.studies.moveallzerostoend.approach;
+package br.com.studies.array.moveallzerostoend.approach;
 
-import br.com.studies.moveallzerostoend.PushZerosToEnd;
+import br.com.studies.array.moveallzerostoend.PushZerosToEnd;
 
 import java.util.Arrays;
 import java.util.List;

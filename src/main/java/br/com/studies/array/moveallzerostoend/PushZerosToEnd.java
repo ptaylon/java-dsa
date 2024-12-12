@@ -1,4 +1,4 @@
-package br.com.studies.moveallzerostoend;
+package br.com.studies.array.moveallzerostoend;
 
 public interface PushZerosToEnd {
 
