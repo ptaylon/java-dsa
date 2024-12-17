@@ -10,12 +10,9 @@ public class MenuConsole {
 
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
-        BinaryTree.Tree binaryTree = new BinaryTree.Tree();
+        BinaryTree binaryTree = new BinaryTree();
 
         while (!exit) {
-
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
 
             System.out.println("\n====== Binary Tree Operations Menu ======");
             System.out.println("1. Add Node");
@@ -83,7 +80,7 @@ public class MenuConsole {
                     try {
 
                         int printType = Integer.parseInt(scanner.nextLine());
-                        binaryTree.print(BinaryTree.PrinterType.getPrinterTypeByValue(printType));
+                        binaryTree.print(PrinterType.getPrinterTypeByValue(printType));
                         System.out.println("Click either key to continue...");
                         System.in.read();
 
@@ -102,7 +99,7 @@ public class MenuConsole {
                     try {
 
                         int valueToSearch = Integer.parseInt(scanner.nextLine());
-                        BinaryTree.Node node = binaryTree.searchNode(binaryTree.getRoot(), valueToSearch);
+                        Node node = binaryTree.searchNode(binaryTree.getRoot(), valueToSearch);
 
                         if (node != null) {
                             System.out.println("Searched for node with value: " + node.getData());
