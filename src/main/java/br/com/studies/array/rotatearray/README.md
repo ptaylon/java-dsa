@@ -22,12 +22,11 @@ Given an array `arr[]`. Rotate the array to the left (counter-clockwise directio
 - **Explanation:** When we rotate 9 times, we'll get `3 9 1 7` as the resultant array.
 
 ## Constraints
-- \(1 \leq \text{arr.size()} \leq 10^5\)
-- \(0 \leq \text{arr[i]} \leq 10^5\)
-
-
+1 <= arr.size(), d <= 105 
+0 <= arr[i] <= 105
 
 
 References: 
+
 https://www.geeksforgeeks.org/complete-guide-on-array-rotations/
 https://www.geeksforgeeks.org/array-rotation/
