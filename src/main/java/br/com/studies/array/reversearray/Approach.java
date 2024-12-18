@@ -44,7 +44,6 @@ public class Approach implements ReverseArray {
         System.out.println(stringTest);
         System.out.println(Arrays.stream(reversedSetence).map(String::valueOf).collect(Collectors.joining("")));
 
-
     }
 
 }
