@@ -1,12 +1,15 @@
 package br.com.studies.array.reversearray;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.stream.Collectors;
 
 public class Approach implements ReverseArray {
 
     @Override
     public <T> T[] reverseArray(final T[] arr) {
+
+        // or Collections.reverse(arr);
 
         for (int i = 0; i < arr.length / 2; i++) {
 

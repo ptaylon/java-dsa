@@ -29,9 +29,11 @@ public class RotateArrayImpl implements RotateArray {
 
     static int mapPosition(int length, int i, int d) {
 
+        // Get the rest if d is greater than array length,
+        // this is necessary to ignore multiple unnecessary operations
         int movements = d >= length ? d % length : d;
 
-        int position  = i - movements;
+        int position = i - movements;
         if (position < 0) {
             position = position + length;
         }
