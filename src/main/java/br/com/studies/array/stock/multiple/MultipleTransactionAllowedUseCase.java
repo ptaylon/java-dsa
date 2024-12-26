@@ -1,5 +1,7 @@
-package br.com.studies.array.stock;
+package br.com.studies.array.stock.multiple;
 
+
+import br.com.studies.array.stock.FinancialOperation;
 
 /**
  * Algorithm complexity: O(n)
