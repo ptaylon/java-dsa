@@ -1,4 +1,4 @@
-package br.com.studies.moveallzerostoend.approach;
+package br.com.studies.array.moveallzerostoend;
 
 import org.junit.jupiter.params.provider.Arguments;
 

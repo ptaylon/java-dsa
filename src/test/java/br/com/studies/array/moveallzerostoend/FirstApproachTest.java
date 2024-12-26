@@ -1,4 +1,4 @@
-package br.com.studies.moveallzerostoend.approach;
+package br.com.studies.array.moveallzerostoend;
 
 import br.com.studies.array.moveallzerostoend.approach.FirstApproach;
 import io.micrometer.core.instrument.MeterRegistry;
@@ -28,7 +28,7 @@ class FirstApproachTest {
     }
 
     @ParameterizedTest
-    @MethodSource("br.com.studies.moveallzerostoend.approach.MockData#provideArraysForTesting")
+    @MethodSource("br.com.studies.array.moveallzerostoend.MockData#provideArraysForTesting")
     @DisplayName("Should move zeros to end")
     void shouldMoveZeroToEnd(int[] arr, int[] expected) {
 
@@ -40,7 +40,7 @@ class FirstApproachTest {
     }
 
     @ParameterizedTest
-    @MethodSource("br.com.studies.moveallzerostoend.approach.MockData#provideLargeArraysForPerformanceTest")
+    @MethodSource("br.com.studies.array.moveallzerostoend.MockData#provideLargeArraysForPerformanceTest")
     void testLargeArray(int[] input, int[] expected) {
 
         Timer timer = Timer.builder("pushZerosToEnd")
